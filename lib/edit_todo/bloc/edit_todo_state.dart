@@ -25,6 +25,7 @@ final class EditTodoState extends Equatable {
   bool get isNewTodo => initialTodo == null;
 
   EditTodoState copyWith({
+    //tạo một bản sao mới. Nếu giá trị ko thay đổi thì dùng lại bảng này
     EditTodoStatus? status,
     Todo? initialTodo,
     String? title,
